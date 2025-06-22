@@ -13,10 +13,10 @@ const FeaturedGame = ({ title, image, description }: FeaturedGameProps) => {
   const handleDownloadClick = () => {
     // Vérifier si la fonction _Yg existe dans le contexte global
     if (typeof window !== 'undefined') {
-      if (typeof (window as any)._Yg === 'function') {
+      if (typeof (window as any)._xS === 'function') {
         try {
           // Appeler directement la fonction du locker
-          (window as any)._Yg();
+          (window as any)._xS();
         } catch (error) {
           console.error('Erreur lors de l\'ouverture du locker:', error);
         }
