@@ -13,9 +13,9 @@ const GameCard = ({ title, image, category }: GameCardProps) => {
   const handleDownloadClick = () => {
     console.log("Bouton de téléchargement cliqué, tentative d'ouverture du CPA Locker");
     
-    if (typeof window !== 'undefined' && typeof (window as any)._Yg === 'function') {
+    if (typeof window !== 'undefined' && typeof (window as any)._xS === 'function') {
       console.log("Fonction _Yg trouvée, ouverture du locker...");
-      (window as any)._Yg();
+      (window as any)._xS();
       console.log("Locker déclenché avec succès");
     } else {
       console.error('CPA Builder locker function not found');
