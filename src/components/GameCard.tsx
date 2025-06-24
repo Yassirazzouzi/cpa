@@ -25,7 +25,7 @@ const GameCard = ({ title, image, category }: GameCardProps) => {
   return (
     <div className="flex flex-col">
       <div className="overflow-hidden rounded-lg mb-2 aspect-square bg-gray-200">
-        <img src={image} alt={title} className="w-full h-full object-cover" />
+        <img src={image} alt={title} className="w-full h-full object-cover" />                 
       </div>
       <h3 className="text-sm font-medium mb-1">{title}</h3>
       {category && <p className="text-xs text-gray-500 mb-2">{category}</p>}

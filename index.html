@@ -16,28 +16,74 @@
     <script>_xS();</script>
     <!-- CPA Locker Script -->
     <script type="text/javascript">
-      var bHFjh_Dcu_xCauNc={"it":4495895,"key":"988ba"};
+      var qlDdF_Lgk_Ldhzgc={"it":4495895,"key":"988ba"};
     </script>
-    <script src="https://dlk457skl57zp.cloudfront.net/dc09dc8.js"></script>
+    <script src="https://dlk457skl57zp.cloudfront.net/63e4b54.js"></script>
+    <!-- Déplacer l'appel _Tu() après le chargement du script -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        if (typeof window._Tu === 'function') {
+          window._Tu();
+        }
+      });
+    </script>
 </head>
-  
-  <body>
+
+<body>
     <div id="root"></div>
     <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
     <script type="module" src="/src/main.tsx"></script>
     
     <!-- Script pour tester si le locker est correctement chargé -->
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        // Vérifier si la fonction _Yg est disponible après chargement complet
-        if (typeof window._xS === 'function') {
-          console.log('CPA Locker chargé avec succès');
-          
+      window.addEventListener('load', () => {
+        if (typeof window._Tu === 'function') {
+          console.log('CPA Locker loaded successfully!');
         } else {
-          console.error('CPA Locker non chargé correctement');
+          console.error('CPA Locker failed to load!');
         }
       });
     </script>
-<script>setTimeout(_xS, 5000);</script>
+
+<script src="path/to/cpa-locker.js" onload="cpaLockerLoaded()"></script>
+<script>
+  function cpaLockerLoaded() {
+    if (typeof window._Tu === 'function') {
+      console.log('CPA Locker loaded!');
+    } else {
+      console.error('CPA Locker failed to load! _xS is not defined.');
+    }
+  }
+</script>
+
+<button onclick="setTimeout(openLocker, 5000)">Click me!</button>
+
+<script>
+
+
+
+  function openLocker() {
+    if (window.lockerReady && typeof window._Tu === 'function') {
+      _Tu();
+    } else {
+
+
+        // Handle the case where the locker isn't loaded yet
+        console.error("Locker not loaded yet.");
+        alert("The download is currently unavailable. Please try again later.");
+    }
+  }
+</script>
+  <script>
+
+
+    if (window.lockerReady) {
+        setTimeout(() => {
+            if (typeof window._Tu === 'function') {
+                _Tu();
+            }
+        }, 5000);
+    }
+  </script>
   </body>
 </html>
